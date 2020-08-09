@@ -15,6 +15,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    var questions = ["Question 1?", "Question 2?", "Question 3?"];
+
     return Scaffold(
         appBar: AppBar(title: Text('PageView Demo'), actions: [
           IconButton(
@@ -42,15 +44,57 @@ class _HomePageState extends State<HomePage> {
             });
             print(pageChanged);
           },
-          children: [
+          children: <Widget>[
             Container(
               color: Colors.indigo,
+              child: Column(
+                children: <Widget>[
+                  Text("Please answer the following question 1."),
+                  Text("Please answer the following question 1."),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                  ),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('No', style: TextStyle(fontSize: 20)),
+                  ),
+                ],
+              ),
             ),
             Container(
               color: Colors.red,
+              child: Column(
+                children: <Widget>[
+                  Text("Please answer the following question 2."),
+                  Text("Please answer the following question 2."),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                  ),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('No', style: TextStyle(fontSize: 20)),
+                  ),
+                ],
+              ),
             ),
             Container(
               color: Colors.brown,
+              child: Column(
+                children: <Widget>[
+                  Text("Please answer the following question 3."),
+                  Text("Please answer the following question 3."),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                  ),
+                  const RaisedButton(
+                    onPressed: null,
+                    child: Text('No', style: TextStyle(fontSize: 20)),
+                  ),
+                ],
+              ),
             )
           ],
         ));
