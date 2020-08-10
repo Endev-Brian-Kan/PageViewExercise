@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
               }),
         ]),
         body: PageView(
-          pageSnapping: false,
+          // pageSnapping: false,
           // Axis.vertical;
           controller: pageController,
           onPageChanged: (index) {
@@ -46,76 +46,100 @@ class _HomePageState extends State<HomePage> {
           },
           children: <Widget>[
             Container(
-              color: Colors.indigo,
+              // color: Colors.indigo,
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 1."),
                   Text("Have you ever had the following symptoms?"),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(++pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                    child: Text('Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(--pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('No', style: TextStyle(fontSize: 20)),
+                    child: Text('No',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                 ],
               ),
             ),
             Container(
-              color: Colors.red,
+              // color: Colors.red,
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 2."),
                   Text("Have you ever had the following symptoms?"),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(++pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                    child: Text('Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(--pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('No', style: TextStyle(fontSize: 20)),
+                    child: Text('No',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                 ],
               ),
             ),
             Container(
-              color: Colors.brown,
+              // color: Colors.brown,
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 3."),
                   Text("Have you ever had the following symptoms?"),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(++pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('Yes', style: TextStyle(fontSize: 20)),
+                    child: Text('Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                   RaisedButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)),
+                    color: Colors.teal[200],
                     onPressed: () {
                       pageController.animateToPage(--pageChanged,
                           duration: Duration(milliseconds: 250),
                           curve: Curves.bounceInOut);
                     },
-                    child: Text('No', style: TextStyle(fontSize: 20)),
+                    child: Text('No',
+                        style: TextStyle(fontSize: 20, color: Colors.white)),
                   ),
                 ],
               ),
