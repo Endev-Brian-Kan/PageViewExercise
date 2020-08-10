@@ -50,13 +50,21 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 1."),
-                  Text("Please answer the following question 1."),
-                  const RaisedButton(
-                    onPressed: null,
+                  Text("Have you ever had the following symptoms?"),
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(++pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('Yes', style: TextStyle(fontSize: 20)),
                   ),
-                  const RaisedButton(
-                    onPressed: null,
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(--pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('No', style: TextStyle(fontSize: 20)),
                   ),
                 ],
@@ -67,13 +75,21 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 2."),
-                  Text("Please answer the following question 2."),
-                  const RaisedButton(
-                    onPressed: null,
+                  Text("Have you ever had the following symptoms?"),
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(++pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('Yes', style: TextStyle(fontSize: 20)),
                   ),
-                  const RaisedButton(
-                    onPressed: null,
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(--pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('No', style: TextStyle(fontSize: 20)),
                   ),
                 ],
@@ -84,13 +100,21 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: <Widget>[
                   Text("Please answer the following question 3."),
-                  Text("Please answer the following question 3."),
-                  const RaisedButton(
-                    onPressed: null,
+                  Text("Have you ever had the following symptoms?"),
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(++pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('Yes', style: TextStyle(fontSize: 20)),
                   ),
-                  const RaisedButton(
-                    onPressed: null,
+                  RaisedButton(
+                    onPressed: () {
+                      pageController.animateToPage(--pageChanged,
+                          duration: Duration(milliseconds: 250),
+                          curve: Curves.bounceInOut);
+                    },
                     child: Text('No', style: TextStyle(fontSize: 20)),
                   ),
                 ],
