@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var questions = ["Question 1?", "Question 2?", "Question 3?"];
+    // var questions = ["Question 1?", "Question 2?", "Question 3?"];
 
     return Scaffold(
         appBar: AppBar(title: Text('PageView Demo'), actions: [
@@ -49,32 +49,75 @@ class _HomePageState extends State<HomePage> {
               // color: Colors.indigo,
               child: Column(
                 children: <Widget>[
-                  Text("Please answer the following question 1."),
-                  Text("Have you ever had the following symptoms?"),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(++pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Please answer the following question 1.",
                   ),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(--pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('No',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Have you ever had a biopsy regarding this area before?",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
+                  SizedBox(height: 50),
+                  ButtonTheme(
+                    minWidth: 150,
+                    // height: 100,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(++pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text(
+                        'Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(++pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('Yes',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
+                  ButtonTheme(
+                    minWidth: 150,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(--pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text(
+                        'No',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(--pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('No',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
                 ],
               ),
             ),
@@ -82,32 +125,70 @@ class _HomePageState extends State<HomePage> {
               // color: Colors.red,
               child: Column(
                 children: <Widget>[
-                  Text("Please answer the following question 2."),
-                  Text("Have you ever had the following symptoms?"),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(++pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Please answer the following question 2.",
                   ),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(--pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('No',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Have you ever had a biopsy regarding this area before?",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
+                  SizedBox(height: 15),
+                  ButtonTheme(
+                    minWidth: 150,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(++pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text('Yes',
+                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(++pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('Yes',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
+                  ButtonTheme(
+                    minWidth: 150,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(--pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text('No',
+                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(--pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('No',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
                 ],
               ),
             ),
@@ -115,32 +196,70 @@ class _HomePageState extends State<HomePage> {
               // color: Colors.brown,
               child: Column(
                 children: <Widget>[
-                  Text("Please answer the following question 3."),
-                  Text("Have you ever had the following symptoms?"),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(++pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Please answer the following question 3.",
                   ),
-                  RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    color: Colors.teal[200],
-                    onPressed: () {
-                      pageController.animateToPage(--pageChanged,
-                          duration: Duration(milliseconds: 250),
-                          curve: Curves.bounceInOut);
-                    },
-                    child: Text('No',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
+                  Text(
+                    "Have you ever had a biopsy regarding this area before?",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
                   ),
+                  SizedBox(height: 15),
+                  ButtonTheme(
+                    minWidth: 150,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(++pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text('Yes',
+                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(++pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('Yes',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
+                  ButtonTheme(
+                    minWidth: 150,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.teal[200],
+                      onPressed: () {
+                        pageController.animateToPage(--pageChanged,
+                            duration: Duration(milliseconds: 250),
+                            curve: Curves.bounceInOut);
+                      },
+                      child: Text('No',
+                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                    ),
+                  ),
+                  // RaisedButton(
+                  //   shape: RoundedRectangleBorder(
+                  //       borderRadius: BorderRadius.circular(50)),
+                  //   color: Colors.teal[200],
+                  //   onPressed: () {
+                  //     pageController.animateToPage(--pageChanged,
+                  //         duration: Duration(milliseconds: 250),
+                  //         curve: Curves.bounceInOut);
+                  //   },
+                  //   child: Text('No',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
+                  // ),
                 ],
               ),
             )
