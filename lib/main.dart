@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
           },
           children: <Widget>[
             Container(
-              // color: Colors.indigo,
+              // PAGE 1 STARTS HERE ============================
               child: Column(
                 children: <Widget>[
                   Text(
@@ -77,18 +77,6 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(++pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('Yes',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -106,23 +94,11 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(--pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('No',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                 ],
               ),
             ),
             Container(
-              // color: Colors.red,
+              // PAGE 2 STARTS HERE ============================
               child: Column(
                 children: <Widget>[
                   Text(
@@ -134,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 50),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -150,18 +126,6 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(fontSize: 20, color: Colors.white)),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(++pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('Yes',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -177,23 +141,11 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(fontSize: 20, color: Colors.white)),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(--pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('No',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                 ],
               ),
             ),
             Container(
-              // color: Colors.brown,
+              // PAGE 3 STARTS HERE ============================
               child: Column(
                 children: <Widget>[
                   Text(
@@ -205,7 +157,7 @@ class _HomePageState extends State<HomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 50),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -221,18 +173,6 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(fontSize: 20, color: Colors.white)),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(++pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('Yes',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -248,18 +188,6 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(fontSize: 20, color: Colors.white)),
                     ),
                   ),
-                  // RaisedButton(
-                  //   shape: RoundedRectangleBorder(
-                  //       borderRadius: BorderRadius.circular(50)),
-                  //   color: Colors.teal[200],
-                  //   onPressed: () {
-                  //     pageController.animateToPage(--pageChanged,
-                  //         duration: Duration(milliseconds: 250),
-                  //         curve: Curves.bounceInOut);
-                  //   },
-                  //   child: Text('No',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white)),
-                  // ),
                 ],
               ),
             )
