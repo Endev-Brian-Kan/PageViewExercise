@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './noButton.dart';
+import './yesButton.dart';
+
 void main() => runApp(MaterialApp(
       home: HomePage(),
     ));
@@ -59,24 +62,25 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 50),
-                  ButtonTheme(
-                    minWidth: 150,
-                    // height: 100,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(++pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  Yesbutton(),
+                  // ButtonTheme(
+                  //   minWidth: 150,
+                  //   // height: 100,
+                  //   child: RaisedButton(
+                  //     shape: RoundedRectangleBorder(
+                  //         borderRadius: BorderRadius.circular(50)),
+                  //     color: Colors.teal[200],
+                  //     onPressed: () {
+                  //       pageController.animateToPage(++pageChanged,
+                  //           duration: Duration(milliseconds: 250),
+                  //           curve: Curves.bounceInOut);
+                  //     },
+                  //     child: Text(
+                  //       'Yes',
+                  //       style: TextStyle(fontSize: 20, color: Colors.white),
+                  //     ),
+                  //   ),
+                  // ),
                   ButtonTheme(
                     minWidth: 150,
                     child: RaisedButton(
@@ -122,8 +126,10 @@ class _HomePageState extends State<HomePage> {
                             duration: Duration(milliseconds: 250),
                             curve: Curves.bounceInOut);
                       },
-                      child: Text('Yes',
-                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                      child: Text(
+                        'Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                     ),
                   ),
                   ButtonTheme(
@@ -137,8 +143,10 @@ class _HomePageState extends State<HomePage> {
                             duration: Duration(milliseconds: 250),
                             curve: Curves.bounceInOut);
                       },
-                      child: Text('No',
-                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                      child: Text(
+                        'No',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
@@ -169,8 +177,10 @@ class _HomePageState extends State<HomePage> {
                             duration: Duration(milliseconds: 250),
                             curve: Curves.bounceInOut);
                       },
-                      child: Text('Yes',
-                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                      child: Text(
+                        'Yes',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                     ),
                   ),
                   ButtonTheme(
@@ -184,8 +194,10 @@ class _HomePageState extends State<HomePage> {
                             duration: Duration(milliseconds: 250),
                             curve: Curves.bounceInOut);
                       },
-                      child: Text('No',
-                          style: TextStyle(fontSize: 20, color: Colors.white)),
+                      child: Text(
+                        'No',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
                     ),
                   ),
                 ],
