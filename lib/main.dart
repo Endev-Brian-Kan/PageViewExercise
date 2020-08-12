@@ -50,20 +50,35 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Container(
               // PAGE 1 STARTS HERE ============================
-              child: Column(
+              child: Stack(
                 children: <Widget>[
                   Text(
                     "Please answer the following question 1.",
                   ),
-                  Text(
-                    "Have you ever had a biopsy regarding this area before?",
-                    style: TextStyle(
-                      fontSize: 20,
-                    ),
+                  Column(
+                    children: <Widget>[
+                      Text(
+                        "Have you ever had a biopsy regarding this area before?",
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      // SizedBox for space
+                      SizedBox(height: 50),
+                      Yesbutton(pageController, pageChanged),
+                      Nobutton(pageController, pageChanged),
+                    ],
                   ),
-                  SizedBox(height: 50),
-                  Yesbutton(pageController, pageChanged),
-                  Nobutton(pageController, pageChanged),
+                  // Text(
+                  //   "Have you ever had a biopsy regarding this area before?",
+                  //   style: TextStyle(
+                  //     fontSize: 20,
+                  //   ),
+                  // ),
+                  // // SizedBox for space
+                  // SizedBox(height: 50),
+                  // Yesbutton(pageController, pageChanged),
+                  // Nobutton(pageController, pageChanged),
                 ],
               ),
             ),
