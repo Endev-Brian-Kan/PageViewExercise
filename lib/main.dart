@@ -50,23 +50,58 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Container(
               // PAGE 1 STARTS HERE ============================
-              child: Stack(
+              child: Column(
                 children: <Widget>[
-                  Text(
-                    "Please answer the following question 1.",
+                  SizedBox(height: 50),
+                  Container(
+                    width: double.infinity,
+                    height: 50,
+                    // color: Colors.teal[200],
+                    decoration: BoxDecoration(
+                      color: Colors.teal[200],
+                      borderRadius: BorderRadius.only(
+                        topLeft: const Radius.circular(20.0),
+                        topRight: const Radius.circular(20.0),
+                      ),
+                    ),
+
+                    child: Center(
+                      child: Text(
+                        "Please answer the following question 1.",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
                   ),
                   Column(
                     children: <Widget>[
-                      Text(
-                        "Have you ever had a biopsy regarding this area before?",
-                        style: TextStyle(
-                          fontSize: 20,
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.teal[50],
+                          borderRadius: BorderRadius.only(
+                            topLeft: const Radius.circular(20.0),
+                            topRight: const Radius.circular(20.0),
+                          ),
+                        ),
+                        child: Column(
+                          children: <Widget>[
+                            Text(
+                              "Have you ever had a biopsy regarding this area before?",
+                              // textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 17,
+                              ),
+                            ),
+                            // SizedBox for space
+                            SizedBox(height: 50),
+                            Yesbutton(pageController, pageChanged),
+                            Nobutton(pageController, pageChanged),
+                          ],
                         ),
                       ),
-                      // SizedBox for space
-                      SizedBox(height: 50),
-                      Yesbutton(pageController, pageChanged),
-                      Nobutton(pageController, pageChanged),
                     ],
                   ),
                   // Text(
