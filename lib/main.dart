@@ -62,42 +62,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 50),
-                  Yesbutton(),
-                  // ButtonTheme(
-                  //   minWidth: 150,
-                  //   // height: 100,
-                  //   child: RaisedButton(
-                  //     shape: RoundedRectangleBorder(
-                  //         borderRadius: BorderRadius.circular(50)),
-                  //     color: Colors.teal[200],
-                  //     onPressed: () {
-                  //       pageController.animateToPage(++pageChanged,
-                  //           duration: Duration(milliseconds: 250),
-                  //           curve: Curves.bounceInOut);
-                  //     },
-                  //     child: Text(
-                  //       'Yes',
-                  //       style: TextStyle(fontSize: 20, color: Colors.white),
-                  //     ),
-                  //   ),
-                  // ),
-                  ButtonTheme(
-                    minWidth: 150,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(--pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'No',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  Yesbutton(pageController, pageChanged),
+                  Nobutton(pageController, pageChanged),
                 ],
               ),
             ),
@@ -115,40 +81,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 50),
-                  ButtonTheme(
-                    minWidth: 150,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(++pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  ButtonTheme(
-                    minWidth: 150,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(--pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'No',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  Yesbutton(pageController, pageChanged),
+                  Nobutton(pageController, pageChanged),
                 ],
               ),
             ),
@@ -166,40 +100,8 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 50),
-                  ButtonTheme(
-                    minWidth: 150,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(++pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'Yes',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  ButtonTheme(
-                    minWidth: 150,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      color: Colors.teal[200],
-                      onPressed: () {
-                        pageController.animateToPage(--pageChanged,
-                            duration: Duration(milliseconds: 250),
-                            curve: Curves.bounceInOut);
-                      },
-                      child: Text(
-                        'No',
-                        style: TextStyle(fontSize: 20, color: Colors.white),
-                      ),
-                    ),
-                  ),
+                  Yesbutton(pageController, pageChanged),
+                  Nobutton(pageController, pageChanged),
                 ],
               ),
             )
