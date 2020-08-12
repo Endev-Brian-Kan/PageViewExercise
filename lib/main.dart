@@ -50,12 +50,12 @@ class _HomePageState extends State<HomePage> {
           children: <Widget>[
             Container(
               // PAGE 1 STARTS HERE ============================
-              child: Column(
+              child: Stack(
                 children: <Widget>[
                   SizedBox(height: 50),
                   Container(
                     width: double.infinity,
-                    height: 50,
+                    height: 500,
                     // color: Colors.teal[200],
                     decoration: BoxDecoration(
                       color: Colors.teal[200],
