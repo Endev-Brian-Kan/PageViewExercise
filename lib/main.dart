@@ -18,8 +18,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // var questions = ["Question 1?", "Question 2?", "Question 3?"];
-
     return Scaffold(
         appBar: AppBar(title: Text('PageView Demo'), actions: [
           IconButton(
@@ -48,8 +46,8 @@ class _HomePageState extends State<HomePage> {
             print(pageChanged);
           },
           children: <Widget>[
+            // PAGE 1 STARTS HERE ============================
             Container(
-              // PAGE 1 STARTS HERE ============================
               child: Stack(
                 alignment: Alignment.bottomCenter,
                 children: <Widget>[
@@ -107,8 +105,8 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            // PAGE 2 STARTS HERE ============================
             Container(
-              // PAGE 2 STARTS HERE ============================
               child: Column(
                 children: <Widget>[
                   Text(
@@ -126,8 +124,8 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+            // PAGE 3 STARTS HERE ============================
             Container(
-              // PAGE 3 STARTS HERE ============================
               child: Column(
                 children: <Widget>[
                   Text(
