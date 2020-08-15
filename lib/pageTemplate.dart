@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './questions.dart';
 
 import './noButton.dart';
 import './yesButton.dart';
@@ -29,18 +30,18 @@ class Pagetemplate extends StatelessWidget {
               topRight: const Radius.circular(20.0),
             ),
           ),
-
-          child: Container(
-            padding: EdgeInsets.all(16.0),
-            child: Text(
-              "Please answer the following question 1.",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 18,
-                color: Colors.white,
-              ),
-            ),
-          ),
+          child: Questionindex(pageTemplateChange),
+          // child: Container(
+          //   padding: EdgeInsets.all(16.0),
+          //   child: Text(
+          //     "Please answer the following question 1.",
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       fontSize: 18,
+          //       color: Colors.white,
+          //     ),
+          //   ),
+          // ),
         ),
         Container(
           padding: EdgeInsets.all(16.0),
