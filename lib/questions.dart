@@ -32,7 +32,7 @@ class Questionindex extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Text(
-        '$questionsArray[pageNumber]',
+        questionsArray[pageNumber],
         textAlign: TextAlign.center,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(fontWeight: FontWeight.bold),

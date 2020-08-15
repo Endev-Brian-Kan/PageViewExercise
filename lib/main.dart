@@ -18,22 +18,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(title: Text('PageView Demo'), actions: [
-        //   IconButton(
-        //       icon: Icon(Icons.arrow_back),
-        //       onPressed: () {
-        //         pageController.animateToPage(--pageChanged,
-        //             duration: Duration(milliseconds: 250),
-        //             curve: Curves.bounceInOut);
-        //       }),
-        //   IconButton(
-        //       icon: Icon(Icons.arrow_forward),
-        //       onPressed: () {
-        //         pageController.animateToPage(++pageChanged,
-        //             duration: Duration(milliseconds: 250),
-        //             curve: Curves.bounceInOut);
-        //       }),
-        // ]),
         body: PageView(
       controller: pageController,
       onPageChanged: (index) {
