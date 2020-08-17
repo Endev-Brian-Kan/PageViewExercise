@@ -34,7 +34,7 @@ class Pagetemplate extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.all(16.0),
-          height: 430,
+          height: 480,
           decoration: BoxDecoration(
             color: Colors.teal[50],
             borderRadius: BorderRadius.only(
