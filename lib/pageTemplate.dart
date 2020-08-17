@@ -19,10 +19,9 @@ class Pagetemplate extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomCenter,
       children: <Widget>[
-        SizedBox(height: 50),
         Container(
           width: double.infinity,
-          height: 480,
+          height: 530,
           // color: Colors.teal[200],
           decoration: BoxDecoration(
             color: Colors.teal[200],
@@ -35,7 +34,7 @@ class Pagetemplate extends StatelessWidget {
         ),
         Container(
           padding: EdgeInsets.all(16.0),
-          height: 400,
+          height: 430,
           decoration: BoxDecoration(
             color: Colors.teal[50],
             borderRadius: BorderRadius.only(
