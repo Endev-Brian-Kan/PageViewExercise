@@ -9,9 +9,9 @@ class Questionindex extends StatelessWidget {
 
   // Build the array
   final questionsArray = [
-    "This is Question 1",
-    "Question 2",
-    "Question 3",
+    "Have you ever had a biopsy before?",
+    "What is your family history with cancer?",
+    "What color is your skin?",
   ];
 
   // Get the corresponding array value
@@ -35,7 +35,7 @@ class Questionindex extends StatelessWidget {
         questionsArray[pageNumber],
         textAlign: TextAlign.center,
         overflow: TextOverflow.ellipsis,
-        style: TextStyle(fontWeight: FontWeight.bold),
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
       ),
     );
   }

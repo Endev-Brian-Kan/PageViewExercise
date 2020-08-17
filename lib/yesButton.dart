@@ -10,7 +10,6 @@ class Yesbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ButtonTheme(
       minWidth: 150,
-      // height: 100,
       child: RaisedButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
         color: Colors.teal[200],

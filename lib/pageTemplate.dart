@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './questionTitle.dart';
 import './questions.dart';
 
 import './noButton.dart';
@@ -30,7 +31,7 @@ class Pagetemplate extends StatelessWidget {
               topRight: const Radius.circular(20.0),
             ),
           ),
-          child: Questionindex(pageTemplateChange),
+          child: Questiontitleindex(pageTemplateChange),
         ),
         Container(
           padding: EdgeInsets.all(16.0),
@@ -44,13 +45,9 @@ class Pagetemplate extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              // SizedBox(height: 50),
-              Text(
-                "Have you ever had a biopsy regarding this area before?",
-                style: TextStyle(
-                  fontSize: 17,
-                ),
-              ),
+              SizedBox(height: 50, width: double.infinity),
+
+              Questionindex(pageTemplateChange),
               // SizedBox for space
               SizedBox(height: 50),
               Yesbutton(pageTemplateController, pageTemplateChange),
